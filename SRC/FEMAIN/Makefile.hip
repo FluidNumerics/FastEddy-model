@@ -122,7 +122,7 @@ TEST_OBJS = ./FastEddy.o \
 # Targets
 # ###############################################################################
 
-all: FastEddy
+all: hipify FastEddy
 
 hipify:
 	find ../ -name "*.cu" -exec hipify-perl -inplace {} \;
